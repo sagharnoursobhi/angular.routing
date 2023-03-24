@@ -1,0 +1,6 @@
+<p>github-followers works!</p>
+<ul>
+  <li *ngFor="let follower of listOfFollowers">
+    <a [routerLink]="['/followers', follower.name]">{{ follower.name }}</a>
+  </li>
+</ul>
